@@ -10,15 +10,6 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: var(--font-size);
-}
-
-body {
-  font-family: var(--font-serif);
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  overflow-x: hidden;
-  line-height: 1.6;
 }
 
 a {

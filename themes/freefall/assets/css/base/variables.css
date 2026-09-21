@@ -16,6 +16,6 @@
   --color-border: light-dark(#1a1a1a, #948b62);
   --color-border-light: #aaa89e;
   --page-padding: clamp(1.5rem, 5vw, 6rem);
-  --font-size: 21px;
+  --text-size: 21px;
   --container-width: 1440px;
 }
