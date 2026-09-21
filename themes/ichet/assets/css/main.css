@@ -1,0 +1,28 @@
+@import "base/variables.css";
+@import "base/reset.css";
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/heading.css";
+@import "components/columns.css";
+
+main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 3rem var(--page-padding);  
+}
+
+main p {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.85;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  margin-bottom: 1.2em;
+  text-indent: 1.5em;
+}
+
+main p:first-of-type {
+  text-indent: 0;
+}
+

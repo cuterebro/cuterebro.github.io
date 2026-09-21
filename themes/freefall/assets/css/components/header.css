@@ -1,0 +1,56 @@
+header {
+  text-align: right;
+}
+
+header .header {
+  display: inline-block;
+  padding: 0 var(--page-padding) 1em;
+}
+
+.heading {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.heading h2 {
+  line-height: 1;
+}
+
+.heading .pretitle,  .heading .subtitle {
+  font-weight: 100;
+  font-size: small;
+  letter-spacing: 0.6em;
+  text-align: center;
+}
+
+header h1 {
+  letter-spacing: 0.4em;
+  line-height: 1;
+  text-transform: uppercase;
+  // color: var(--color-accent);
+}
+
+header nav ul {
+  padding: 0 var(--page-padding);
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: var(--color-bg);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+header nav li {
+  display: inline;
+  list-style: none;
+}
+
+header nav a {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid transparent;
+}

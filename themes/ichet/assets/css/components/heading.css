@@ -1,0 +1,32 @@
+.heading {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  padding: 1rem 0;
+}
+
+.heading .pretitle {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.3rem;
+} 
+
+.heading .title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 4vw, 2.0rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 0.15rem;  
+}
+
+.heading .subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}

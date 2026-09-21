@@ -1,0 +1,122 @@
+@import "base/variables.css";
+@import "base/reset.css";
+@import "components/header.css";
+@import "components/footer.css";
+
+html, body {
+ height: 100%;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  padding: 0 1em 1em;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.2s;
+  border-bottom: 1px solid transparent;
+
+}
+
+a:hover {
+  color: var(--color-text);
+  // border-bottom-color: var(--color-text);
+} 
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-header);
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+body .trunk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%; 
+  max-width: var(--container-width);
+  margin: 0 auto 1em;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  border: 1px solid var(--color-border);
+  padding: 2.5em var(--page-padding);  
+  background-color: var(--color-bg-alt);
+} 
+
+main .leviathan {
+  opacity: 0.5;
+  position: absolute;
+  line-height: 0.9em;
+  font-size: 30em;
+  right: 0;
+  bottom: 0;
+}
+
+main p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+main .page-header {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+main .page-header h2 {
+  line-height: 1em;
+}
+
+main time {
+  display: block;
+  top: -1em;
+  font-weight: 100;
+  font-size: smaller;
+}
+
+main section {
+  margin-top: 2em;
+}
+
+main section .section-header {
+  margin-bottom: 0.5em;
+}
+
+main section .section-header h3 {
+  line-height: 1em;
+}
+
+main section .summary {
+  font-size: 0.8em;
+}
+
+footer {
+  margin: 1em auto;
+  text-align: center;
+  font-size: small;
+  padding: 1em 0;
+}

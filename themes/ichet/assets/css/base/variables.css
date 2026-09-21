@@ -1,0 +1,18 @@
+:root {
+  --color-bg: #F2F0E8;
+  --color-bg-alt: #EAE8DF;
+  --color-bg-dark: #DDD9CC;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #3a3a3a;
+  --color-text-muted: #6a6a6a;
+  --color-accent: #1a1a1a;
+  --color-border: #1a1a1a;
+  --color-border-light: #aaa89e;
+  --color-rule: #888680;
+  --font-serif: 'Old Standard TT', 'Georgia', 'Times New Roman', serif;
+  --font-mono: 'Courier Prime', 'Courier New', Courier, monospace;
+  --page-padding: clamp(1.5rem, 5vw, 6rem);
+  --font-size: 18px;
+  --content-width: 1440px;
+  --column-gap: 2.5rem;
+}  

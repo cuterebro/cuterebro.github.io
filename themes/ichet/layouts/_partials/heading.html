@@ -1,0 +1,9 @@
+<div class="heading">
+  {{- if .Params.Pretitle }}
+    <div class="pretitle">{{ .Params.Pretitle | htmlUnescape }}</div>
+  {{- end }}
+  <h2 class="title">{{ .Title }}</h2>
+  {{- if .Params.Subtitle }}  
+    <div class="subtitle">{{ .Params.Subtitle | htmlUnescape }}</div>
+  {{- end }}
+</div>

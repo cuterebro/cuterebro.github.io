@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fira+Sans:wght@100;400&display=swap');
+
+:root {
+  color-scheme: light dark;
+
+  --font-main: "Fira Sans", sans-serif;
+  --font-header: "Amatic SC", sans-serif;
+  --font-mono: 'Courier Prime', 'Courier New', Courier, monospace;
+
+  --color-bg: light-dark(#F2F0E8, #051f1b);
+  --color-bg-alt: light-dark(#EAE8DF, #063831);
+  --color-text: light-dark(#1a1a1a, #EAE8DF);
+  --color-text-secondary: light-dark(#3a3a3a, #c7b76d);
+  --color-text-muted: #6a6a6a;
+  --color-accent: light-dark(#1a1a1a, #c7b76d);
+  --color-border: light-dark(#1a1a1a, #948b62);
+  --color-border-light: #aaa89e;
+  --page-padding: clamp(1.5rem, 5vw, 6rem);
+  --font-size: 21px;
+  --container-width: 1440px;
+}

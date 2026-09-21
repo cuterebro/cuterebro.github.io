@@ -1,0 +1,6 @@
+{{- if eq $.Page.Kind "page" }}
+  <div class="epigraph">
+    {{ $.Page.Kind }}
+    {{ .Inner | markdownify }}
+  </div>
+{{- end }}

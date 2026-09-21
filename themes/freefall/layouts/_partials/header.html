@@ -1,0 +1,7 @@
+{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div class='heading'>
+  <div class="pretitle">{{ site.Params.Pretitle | htmlUnescape }}</div>
+  <a href="{{ site.Home.Permalink }}"><h1 class="title">{{ site.Title }}</h1></a>
+  <div class="subtitle">{{ site.Params.Subtitle | htmlUnescape }}</div>
+</div>
+
