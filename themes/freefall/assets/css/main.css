@@ -114,6 +114,36 @@ main section .summary {
   font-size: 0.8em;
 }
 
+main ol {
+  list-style-position: inside;
+}
+
+main ol li {
+  margin-bottom: 0.5em;
+}
+
+main ol li::marker {
+  font-size: 1.2em;
+}
+
+main .footnotes {
+  font-size: 0.8em;
+  margin: 2em 1em 0;
+}
+
+main .taxonomy {
+  
+}
+
+main .taxonomy ul {
+  list-style: none;
+  display: inline-block;
+}
+
+main .taxonomy ul li {
+  display: inline-block;  
+}
+
 footer {
   margin: 1em auto;
   text-align: center;

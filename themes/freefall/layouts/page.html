@@ -2,11 +2,32 @@
   <div class='page-header'>
     <h2>{{ .Title }}</h2>
 
-    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-    {{ $dateHuman := .Date | time.Format ":date_long" }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ with .Date }}
+      {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := . | time.Format ":date_long" }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ end }}
   </div>
-  
+
   {{ .Content }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+  {{- if ne .Params.Type "page" }}
+    <div class='footnotes'>
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+      {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+
+      {{ with .PrevInSection }}
+        <div class="previous-post">
+          Предыдущий пост: <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      {{ end }}
+
+      {{ with .NextInSection }}
+        <div class="next-post">
+          Следующий пост: <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+      {{ end }}
+    </div>
+  {{- end }}  
 {{ end }}
+

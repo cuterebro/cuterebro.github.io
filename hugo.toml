@@ -10,7 +10,7 @@ pluralizelisttitles = false
 
 [Params]
   # pretitle = "Загадочная надпись над заголовком"
-  subtitle = "Ещё более загадочная надпись под заголовком"
+  subtitle = "For those who come after"
   footerTagline = "Литературный блогъ · Безъ цензуры · Безъ компромиссовъ"
   mainSections = ["blog"]
   logo = "/img/avatar-icon.png"
