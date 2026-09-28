@@ -1,7 +1,15 @@
 #!/usr/bin/env sh
 
-now=$(date "+%A, %d %B %Y")
-yq -i ".Params.subtitle=\"$now\"" hugo.toml
-git add .
-git commit -am "Automatic commit $(date +%F)"
-cuterebro git push
+if [ -z "$(git status --porcelain)" ]; then
+  echo "Nothing to commit"
+else
+  now=$(date "+%A, %d %B %Y")
+  size=`{ find ./content -type f -name "*.md" -printf "%s+"; echo 0; } | bc`
+  count=`find ./content -type f -name "*.md" | wc -l` 
+  yq -i ".Params.subtitle=\"$now, $count страниц, $size байт\"" hugo.toml
+
+  eval "$(ssh-agent -s)" && ssh-add ~/.ssh/cuterebro_ed25519
+  git add .
+  git commit -am "Auto commit from $(date +%F), ${count} pages, ${size} bytes"
+  git push origin main
+fi

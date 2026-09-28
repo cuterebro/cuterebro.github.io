@@ -10,7 +10,7 @@ pluralizelisttitles = false
 
 [Params]
 # pretitle = "Загадочная надпись над заголовком"
-subtitle = "Понедельник, 28 сентября 2026"
+subtitle = "Понедельник, 28 сентября 2026, 8 страниц, 48779 байт"
 footerTagline = "Литературный блогъ · Безъ цензуры · Безъ компромиссовъ"
 mainSections = ["blog"]
 logo = "/img/avatar-icon.png"
