@@ -9,57 +9,54 @@ enableRobotsTXT = true
 pluralizelisttitles = false
 
 [Params]
-  # pretitle = "Загадочная надпись над заголовком"
-  subtitle = "For those who come after"
-  footerTagline = "Литературный блогъ · Безъ цензуры · Безъ компромиссовъ"
-  mainSections = ["blog"]
-  logo = "/img/avatar-icon.png"
-  favicon = "/img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  colorScheme = "auto"
-  readingTime = true
-  socialShare = true
-  showRelatedPosts = true
-  rss = true
-  since = 2026
-  selfHosted = true
+# pretitle = "Загадочная надпись над заголовком"
+subtitle = "Понедельник, 28 сентября 2026"
+footerTagline = "Литературный блогъ · Безъ цензуры · Безъ компромиссовъ"
+mainSections = ["blog"]
+logo = "/img/avatar-icon.png"
+favicon = "/img/favicon.ico"
+dateFormat = "January 2, 2006"
+colorScheme = "auto"
+readingTime = true
+socialShare = true
+showRelatedPosts = true
+rss = true
+since = 2026
+selfHosted = true
 
 [Params.author]
-  name = "Cuterebro"
-  website = "yourwebsite.com"
-  email = "cuterebro@gmail.com"
-  github = "cuterebro"
+name = "Cuterebro"
+website = "yourwebsite.com"
+email = "cuterebro@gmail.com"
+github = "cuterebro"
 
 [markup.highlight]
-  noClasses = false
+noClasses = false
 
 [markup.goldmark.parser.attribute]
-  block = true
+block = true
 
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
 
 [[menu.main]]
-    name = "Блог"
-    url = "/blog/"
-    weight = 1
-
+name = "Блог"
+url = "/blog/"
+weight = 1
 [[menu.main]]
-    name = "Проекты"
-    url = "/projects/"
-    weight = 2
-
+name = "Проекты"
+url = "/projects/"
+weight = 2
 [[menu.main]]
-    name = "О сайте"
-    url = "/about/"
-    weight = 3  
+name = "О сайте"
+url = "/about/"
+weight = 3
 
 [[menu.footer]]
-    name = "Об авторе"
-    url = "/author/"
-    weight = 1
-
+name = "Об авторе"
+url = "/author/"
+weight = 1
 [[menu.footer]]
-    name = "Для рекламодателей"
-    url = "/ads/"
-    weight = 2
+name = "Для рекламодателей"
+url = "/ads/"
+weight = 2

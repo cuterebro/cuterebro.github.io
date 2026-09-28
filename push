@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+now=$(date "+%A, %d %B %Y")
+yq -i ".Params.subtitle=\"$now\"" hugo.toml
+git add .
+git commit -am "Automatic commit $(date +%F)"
+cuterebro git push
